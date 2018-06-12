@@ -1,0 +1,29 @@
+:root{
+    --headerHeight:70px;
+}
+
+.widgets-ydHeader{
+    & .h-70 {
+        height: var(--headerHeight);
+    }
+    & .header-content{
+        height: var(--headerHeight);
+        line-height: var(--headerHeight);
+        color: yellowgreen;
+        box-shadow: 0 0 10px #000;
+    }
+    & .header-content__logo{
+        float: left;
+    }
+
+    & .header-content__nav ul li{
+        list-style: none;
+        margin-left: 10px;
+        float: left;
+    }
+
+    & .header-content__nav-active{
+        text-decoration: none;
+        background-color: #2a6496;
+    }
+}
